@@ -47,8 +47,6 @@
   * [Key Management System](guides/kms/README.md)
     * [Tendermint KMS](guides/kms/kms.md)
   * [State Sync](guides/statesync/statesync.md)
-  * [Page Test](guides/page-test/README.md)
-    * [testLayer2](guides/page-test/testlayer2.md)
 * [api](api/README.md)
   * [JSON-RPC Server](api/json-rpc/README.md)
     * [JSON-RPC Server](api/json-rpc/server.md)
@@ -68,7 +66,7 @@
   * [Deploy Node on Cloud](testnet/cloud\_providers.md)
 * [Specifications](specifications/README.md)
   * [Modules](specifications/modules/README.md)
-    * [\[Collection\]](<specifications/modules/collection/README (1).md>)
+    * [Collection](<specifications/modules/collection/README (1).md>)
       * [Collection Overview](specifications/modules/collection/README.md)
       * [Messages](specifications/modules/collection/02\_messages.md)
       * [Events](specifications/modules/collection/03\_events.md)
@@ -86,4 +84,3 @@
   * [Uptick API Reference](https://pkg.go.dev/github.com/UptickNetwork/uptick)
   * [Ethermint Library API Reference](https://pkg.go.dev/github.com/tharsis/ethermint)
   * [JSON-RPC Reference](api/json-rpc/endpoints.md)
-
