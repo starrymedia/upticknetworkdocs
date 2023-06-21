@@ -1,22 +1,14 @@
-<!--
-order: false
-parent:
-  order: 2
--->
-
-# Quick Start
+# quickstart
 
 This repository contains reference documentation on how to install and run an Uptick full node.
 
-1. [Installation](./installation)
-1. [Build and Configuration](./binary)
-1. [Deterministic Builds](./reproducible-builds)
-1. [Run a Node](./run_node)
-1. [Interacting with the Node](./interact_node)
-1. [Cosmovisor](./cosmovisor)
+1. [Installation](installation.md)
+2. [Build and Configuration](binary.md)
+3. [Deterministic Builds](reproducible-builds.md)
+4. [Run a Node](run\_node/)
+5. [Interacting with the Node](interact\_node.md)
+6. [Cosmovisor](cosmovisor.md)
 
-After going through the Quick Start contents, head over to the [basics](./../basics/README) to learn more.
+After going through the Quick Start contents, head over to the [basics](../basics/README/) to learn more.
 
-## Next {hide}
-
-Learn how to [install](./../quickstart/installation) Uptick {hide}
+##
