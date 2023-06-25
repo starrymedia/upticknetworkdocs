@@ -24,8 +24,8 @@ You can also lookup the [EIP155](https://github.com/ethereum/EIPs/blob/master/EI
 
 Here is the list of fields that you can use to paste on Metamask:
 
-{% endhint %}: tabs
-{% endhint %} tab Testnet
+
+ Testnet
 
 - **Network Name:** `Uptick Testnet`
 - **New RPC URL:** `{{ $themeConfig.project.rpc_url_testnet }}`
@@ -33,7 +33,7 @@ Here is the list of fields that you can use to paste on Metamask:
 - **Currency Symbol (optional):** `{{ $themeConfig.project.testnet_ticker }}`
 - **Block Explorer URL (optional):** `{{ $themeConfig.project.block_explorer_url }}`
   {% endhint %}
-  {% endhint %} tab Local Node
+   Local Node
 
 - **Network Name:** `Uptick Local`
 - **New RPC URL:** `{{ $themeConfig.project.rpc_url_local }}`

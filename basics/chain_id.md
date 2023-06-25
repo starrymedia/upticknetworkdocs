@@ -8,15 +8,15 @@ Learn about the Uptick chain-id format
 
 ## Official Chain IDs
 
-{% endhint %}: tabs
-{% endhint %} tab Testnets
+
+ Testnets
 
 | Name                              | Chain ID                                              | Identifier | EIP155 Number                                 | Version Number                                      |
 |-----------------------------------|-------------------------------------------------------|------------|-----------------------------------------------|-----------------------------------------------------|
 | Uptick Origin Testnet                | `origin_7000-1` | `uptick`    | `7000` | `1`                                                 |
 
 {% endhint %}
-{% endhint %} tab Mainnet
+ Mainnet
 
 | Name                                            | Chain ID                                      | Identifier | EIP155 Number                         | Version Number                            |
 |-------------------------------------------------|-----------------------------------------------|------------|---------------------------------------|-------------------------------------------|
@@ -52,15 +52,15 @@ The format for specifying and Uptick compatible chain-id in genesis is the follo
 
 The following table provides an example where the second row corresponds to an upgrade from the first one:
 
-{% endhint %}: tabs
-{% endhint %} tab Testnets
+
+ Testnets
 
 | ChainID        | Identifier | EIP155 Number | Version Number |
 |----------------|------------|---------------|----------------|
 | `origin_1170-1` | uptick      | 1170          | 1              |
 
 {% endhint %}
-{% endhint %} tab Mainnet
+ Mainnet
 
 | ChainID        | Identifier | EIP155 Number | Version Number |
 |----------------|------------|---------------|----------------|
