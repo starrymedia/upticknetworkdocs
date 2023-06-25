@@ -55,8 +55,8 @@ Cosmos `sdk.AccAddress`.
 
 The `uptickd debug addr <address>` can be used to convert an address between hex and bech32 formats. For example:
 
-{% endhint %}: tabs
-{% endhint %} tab Bech32
+
+ Bech32
 
 ```bash
 uptickd debug addr uptick1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
@@ -67,7 +67,7 @@ uptickd debug addr uptick1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
 ```
 
 {% endhint %}
-{% endhint %} tab Hex
+ Hex
 
 ```bash
 uptickd debug addr 14574A6DFF2DDF9E07828B4345D3040919AF5652
@@ -89,8 +89,8 @@ The Cosmos SDK Keyring output (i.e `uptickd keys`) only supports addresses and p
 We can use the `keys show` command of `uptickd` with the flag `--bech <type> (acc|val|cons)` to
 obtain the addresses and keys as mentioned above,
 
-{% endhint %}: tabs
-{% endhint %} tab Account
+
+ Account
 
 ```bash
 uptickd keys show mykey --bech acc
@@ -102,7 +102,7 @@ uptickd keys show mykey --bech acc
 ```
 
 {% endhint %}
-{% endhint %} tab Validator
+ Validator
 
 ```bash
 uptickd keys show mykey --bech val
@@ -114,7 +114,7 @@ uptickd keys show mykey --bech val
 ```
 
 {% endhint %}
-{% endhint %} tab Consensus
+ Consensus
 
 ```bash
 uptickd keys show mykey --bech cons

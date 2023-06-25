@@ -180,22 +180,22 @@ Get the web3 client version.
 
 #### Client Examples
 
-{% endhint %}: tabs
-{% endhint %} tab Shell HTTP
+
+ Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "web3_clientVersion", "params": []}'
 ```
 
 {% endhint %}
-{% endhint %} tab Shell WebSocket
+ Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "web3_clientVersion", "params": []}'
 ```
 
 {% endhint %}
-{% endhint %} tab Javascript Console
+ Javascript Console
 
 ```javascript
 web3.clientVersion();
@@ -222,22 +222,22 @@ Returns Keccak-256 (not the standardized SHA3-256) of the given data.
 
 #### Client Examples
 
-{% endhint %}: tabs
-{% endhint %} tab Shell HTTP
+
+ Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "web3_sha3", "params": [<input>]}'
 ```
 
 {% endhint %}
-{% endhint %} tab Shell WebSocket
+ Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "web3_sha3", "params": [<input>]}'
 ```
 
 {% endhint %}
-{% endhint %} tab Javascript Console
+ Javascript Console
 
 ```javascript
 web3.sha3(input);
@@ -1066,22 +1066,22 @@ Parameters must be given by position.
 
 #### Client Examples
 
-{% endhint %}: tabs
-{% endhint %} tab Shell HTTP
+
+ Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "personal_initializeWallet", "params": [<url>]}'
 ```
 
 {% endhint %}
-{% endhint %} tab Shell WebSocket
+ Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "personal_initializeWallet", "params": [<url>]}'
 ```
 
 {% endhint %}
-{% endhint %} tab Javascript Console
+ Javascript Console
 
 ```javascript
 personal.initializeWallet(url);
@@ -1107,22 +1107,22 @@ Unpair deletes a pairing between wallet and the node.
 
 #### Client Examples
 
-{% endhint %}: tabs
-{% endhint %} tab Shell HTTP
+
+ Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "personal_unpair", "params": [<url>, <pin>]}'
 ```
 
 {% endhint %}
-{% endhint %} tab Shell WebSocket
+ Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "personal_unpair", "params": [<url>, <pin>]}'
 ```
 
 {% endhint %}
-{% endhint %} tab Javascript Console
+ Javascript Console
 
 ```javascript
 personal.unpair(url,pin);
@@ -1345,22 +1345,22 @@ Returns a list of the exact details of all the transactions currently pending fo
 
 #### Client Examples
 
-{% endhint %}: tabs
-{% endhint %} tab Shell HTTP
+
+ Shell HTTP
 
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"txpool_content","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 {% endhint %}
-{% endhint %} tab Shell WebSocket
+ Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "txpool_content", "params": []}'
 ```
 
 {% endhint %}
-{% endhint %} tab Javascript Console
+ Javascript Console
 
 ```javascript
 txpool.content();
@@ -1383,22 +1383,22 @@ Returns a list on text format to summarize all the transactions currently pendin
 
 #### Client Examples
 
-{% endhint %}: tabs
-{% endhint %} tab Shell HTTP
+
+ Shell HTTP
 
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"txpool_inspect","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 {% endhint %}
-{% endhint %} tab Shell WebSocket
+ Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "txpool_inspect", "params": []}'
 ```
 
 {% endhint %}
-{% endhint %} tab Javascript Console
+ Javascript Console
 
 ```javascript
 txpool.inspect();
@@ -1421,22 +1421,22 @@ Returns the number of transactions currently pending for inclusion in the next b
 
 #### Client Examples
 
-{% endhint %}: tabs
-{% endhint %} tab Shell HTTP
+
+ Shell HTTP
 
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"txpool_status","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 {% endhint %}
-{% endhint %} tab Shell WebSocket
+ Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "txpool_status", "params": []}'
 ```
 
 {% endhint %}
-{% endhint %} tab Javascript Console
+ Javascript Console
 
 ```javascript
 txpool.status();
