@@ -42,7 +42,6 @@ The format for specifying and Uptick compatible chain-id in genesis is the follo
 
 The following table provides an example where the second row corresponds to an upgrade from the first one:
 
-: tabs
 
 tab Testnets
 
@@ -56,4 +55,3 @@ tab Mainnet
 | -------------- | ---------- | ------------- | -------------- |
 | `uptick_117-1` | uptick     | 117           | 1              |
 
-:
