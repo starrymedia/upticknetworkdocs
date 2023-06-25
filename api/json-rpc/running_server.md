@@ -4,7 +4,7 @@ order: 2
 
 # Running the Server
 
-Learn how to run and setup the JSON-RPC server on Uptick. {synopsis}
+Learn how to run and setup the JSON-RPC server on Uptick. 
 
 ## Enable Server
 

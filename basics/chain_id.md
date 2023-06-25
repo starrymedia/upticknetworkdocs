@@ -4,7 +4,7 @@ order: 1
 
 # Chain ID
 
-Learn about the Uptick chain-id format {synopsis}
+Learn about the Uptick chain-id format 
 
 ## Official Chain IDs
 

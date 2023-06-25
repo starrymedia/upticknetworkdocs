@@ -4,7 +4,7 @@ order: 2
 
 # Pending State
 
-Learn how Uptick handles pending state queries. {synopsis}
+Learn how Uptick handles pending state queries. 
 
 ## Pre-requisite Readings
 

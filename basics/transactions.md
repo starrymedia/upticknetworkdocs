@@ -4,7 +4,7 @@ order: 3
 
 # Transaction Lifecycle
 
-This document describes the lifecycle of a transaction from creation to committed state changes on the EVM. {synopsis}
+This document describes the lifecycle of a transaction from creation to committed state changes on the EVM. 
 
 ## Pre-requisite Readings
 

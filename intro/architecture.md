@@ -4,7 +4,7 @@ order: 2
 
 # Architecture
 
-Learn how Uptick's architecture leverages the Cosmos SDK Proof-of-Stake functionality, EVM compatibility and fast-finality from Tendermint Core's BFT consensus. {synopsis}
+Learn how Uptick's architecture leverages the Cosmos SDK Proof-of-Stake functionality, EVM compatibility and fast-finality from Tendermint Core's BFT consensus. 
 
 ## Cosmos SDK
 

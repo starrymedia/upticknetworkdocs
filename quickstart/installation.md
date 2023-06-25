@@ -4,7 +4,7 @@ order: 1
 
 # Installation
 
-Build and install the Uptick binaries from source or using Docker. {synopsis}
+Build and install the Uptick binaries from source or using Docker. 
 
 ## Pre-requisites
 

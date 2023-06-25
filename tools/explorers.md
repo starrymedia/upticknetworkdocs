@@ -4,7 +4,7 @@ order: 1
 
 # Block Explorers
 
-Read about the different types of block explorers on Uptick. {synopsis}
+Read about the different types of block explorers on Uptick. 
 
 ## Introduction
 

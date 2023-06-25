@@ -4,7 +4,7 @@ order: 1
 
 # Joining a Testnet
 
-This document outlines the steps to join an existing testnet {synopsis}
+This document outlines the steps to join an existing testnet 
 
 ## Pick a Testnet
 

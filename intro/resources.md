@@ -4,7 +4,7 @@ order: 4
 
 # Resources
 
-Learn about Uptick with the list of official resources. {synopsis}
+Learn about Uptick with the list of official resources. 
 
 - Official Documentation: [https://docs.uptick.network/](https://docs.uptick.network/)
 - Official Codebase: [https://github.com/UptickNetwork/uptick](https://github.com/UptickNetwork/uptick)

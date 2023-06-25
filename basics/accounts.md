@@ -4,7 +4,7 @@ order: 2
 
 # Accounts
 
-This document describes the in-built accounts system of Uptick. {synopsis}
+This document describes the in-built accounts system of Uptick. 
 
 ## Pre-requisite Readings
 

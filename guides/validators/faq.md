@@ -4,7 +4,7 @@ order: 5
 
 # Validator FAQ
 
-Check the FAQ for running a validator on Uptick {synopsis}
+Check the FAQ for running a validator on Uptick 
 
 ## General Concepts
 

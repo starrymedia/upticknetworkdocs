@@ -4,7 +4,7 @@ order: 1
 
 # Encoding
 
-Learn about the encoding formats used on Uptick. {synopsis}
+Learn about the encoding formats used on Uptick. 
 
 ## Pre-requisite Readings
 

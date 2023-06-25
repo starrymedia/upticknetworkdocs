@@ -4,7 +4,7 @@ order: 1
 
 # JSON-RPC Server
 
-Learn about the JSON-RPC server to interact with the EVM. {synopsis}
+Learn about the JSON-RPC server to interact with the EVM. 
 
 ## Pre-requisite Readings
 

@@ -4,7 +4,7 @@ order: 4
 
 # Validator Security Checklist
 
- Conduct a security checklist survey to go through the security measures of a validator {synopsis}
+ Conduct a security checklist survey to go through the security measures of a validator 
 
 ## Pre-requisite Readings
 

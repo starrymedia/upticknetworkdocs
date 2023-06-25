@@ -4,7 +4,7 @@ order: 4
 
 # Deploy Node on Cloud
 
-Learn how to deploy a node to different cloud providers. {synopsis}
+Learn how to deploy a node to different cloud providers. 
 
 ## Digital Ocean
 

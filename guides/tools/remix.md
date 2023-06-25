@@ -4,7 +4,7 @@ order: 1
 
 # Remix: Deploying a Smart Contract
 
-Learn how to deploy a simple Solidity-based smart contract to Uptick using the Remix in-browser IDE {synopsis}
+Learn how to deploy a simple Solidity-based smart contract to Uptick using the Remix in-browser IDE 
 
 ## Pre-requisite Readings
 

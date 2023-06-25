@@ -4,7 +4,7 @@ order: 2
 
 # MetaMask
 
-Connect your MetaMask wallet with Uptick {synopsis}
+Connect your MetaMask wallet with Uptick 
 
 The MetaMask browser extension is a wallet for accessing Ethereum-enabled applications and managing user identities. It can be used to connect to {{ $themeConfig.project.name }} through the official testnet or via a locally-running {{ $themeConfig.project.name }} node.
 

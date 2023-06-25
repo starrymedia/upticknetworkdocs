@@ -4,7 +4,7 @@ order: 3
 
 # Use Cases
 
-Check out the 2 use cases for the Uptick project. {synopsis}
+Check out the 2 use cases for the Uptick project. 
 
 ## Uptick chain
 

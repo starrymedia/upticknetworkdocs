@@ -4,7 +4,7 @@ order: 3
 
 # Deterministic Builds
 
-Build the `uptickd` binary deterministically using Docker. {synopsis}
+Build the `uptickd` binary deterministically using Docker. 
 
 ## Pre-requisites
 

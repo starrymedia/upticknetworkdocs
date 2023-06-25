@@ -4,7 +4,7 @@ order: 3
 
 # Namespaces
 
-Check the JSON-RPC namespaces supported on Uptick. {synopsis}
+Check the JSON-RPC namespaces supported on Uptick. 
 
 ## Pre-requisite Readings
 

@@ -4,7 +4,7 @@ order: 4
 
 # Keplr
 
-Connect your Keplr wallet with Uptick {synopsis}
+Connect your Keplr wallet with Uptick 
 
 ## Pre-requisite Readings
 

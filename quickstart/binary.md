@@ -4,7 +4,7 @@ order: 2
 
 # uptickd
 
-`uptickd` is the all-in-one command-line interface. It supports wallet management, queries and transaction operations {synopsis}
+`uptickd` is the all-in-one command-line interface. It supports wallet management, queries and transaction operations 
 
 ## Pre-requisite Readings
 

@@ -4,7 +4,7 @@ order: 4
 
 # Gas and Fees
 
-Learn about the differences between `Gas` and `Fees` in Ethereum and Cosmos. {synopsis}
+Learn about the differences between `Gas` and `Fees` in Ethereum and Cosmos. 
 
 ## Pre-requisite Readings
 

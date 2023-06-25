@@ -4,7 +4,7 @@ order: 2
 
 # Run a Validator
 
-Learn how to setup and run a validator node {synopsis}
+Learn how to setup and run a validator node 
 
 ## Pre-requisite Readings
 

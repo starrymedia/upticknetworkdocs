@@ -4,7 +4,7 @@ order: 4
 
 # Run a Node
 
-Configure and run an Uptick node {synopsis}
+Configure and run an Uptick node 
 
 ## Pre-requisite Readings
 

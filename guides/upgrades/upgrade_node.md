@@ -4,7 +4,7 @@ order: 1
 
 # Upgrade Node
 
-Learn how to upgrade your full node to the latest software version {synopsis}
+Learn how to upgrade your full node to the latest software version 
 
 With every new software release, we strongly recommend validators to perform a software upgrade, in order to prevent [double signing or halting the chain during consensus](https://docs.tendermint.com/master/spec/consensus/signing.html#double-signing).
 

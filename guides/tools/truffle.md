@@ -4,7 +4,7 @@ order: 3
 
 # Truffle: Deploying a Smart Contract
 
-Learn how to deploy a simple Solidity-based smart contract to Uptick using the Truffle environment {synopsis}
+Learn how to deploy a simple Solidity-based smart contract to Uptick using the Truffle environment 
 
 ## Pre-requisite Readings
 

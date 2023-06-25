@@ -4,7 +4,7 @@ order: 5
 
 # Tokens
 
-Learn about the the different types of tokens available in Uptick. {synopsis}
+Learn about the the different types of tokens available in Uptick. 
 
 ## Introduction
 

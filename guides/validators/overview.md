@@ -4,7 +4,7 @@ order: 1
 
 # Overview
 
-Learn about validating on Uptick {synopsis}
+Learn about validating on Uptick 
 
 ## Introduction
 

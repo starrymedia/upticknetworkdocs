@@ -4,7 +4,7 @@ order: 3
 
 # Clients
 
-Learn about the client supported by your Uptick node. {synopsis}
+Learn about the client supported by your Uptick node. 
 
 ## Client Servers
 

@@ -4,7 +4,7 @@ order: 4
 
 # JSON-RPC Methods
 
-Check the JSON-RPC methods supported on Uptick. {synopsis}
+Check the JSON-RPC methods supported on Uptick. 
 
 ## Pre-requisite Readings
 
