@@ -202,7 +202,7 @@ web3.clientVersion();
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 ### `web3_sha3`
 
@@ -244,7 +244,7 @@ web3.sha3(input);
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 ## Net Methods
 
@@ -1088,7 +1088,7 @@ personal.initializeWallet(url);
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 
 ### `personal_unpair`
@@ -1129,7 +1129,7 @@ personal.unpair(url,pin);
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 
 
@@ -1367,7 +1367,7 @@ txpool.content();
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 #### Result
 
@@ -1405,7 +1405,7 @@ txpool.inspect();
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 #### Result
 
@@ -1443,7 +1443,7 @@ txpool.status();
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 #### Result
 

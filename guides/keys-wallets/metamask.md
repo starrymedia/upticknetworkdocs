@@ -41,7 +41,7 @@ Here is the list of fields that you can use to paste on Metamask:
 - **Currency Symbol (optional):** `{{ $themeConfig.project.testnet_ticker }}`
 - **Block Explorer URL (optional):** `n/a`
   {% endhint %}
-  {% endhint %}:
+  
 
 ## Import Account to Metamask
 

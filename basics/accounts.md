@@ -78,7 +78,7 @@ uptickd debug addr 14574A6DFF2DDF9E07828B4345D3040919AF5652
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 ### Key output
 
@@ -126,7 +126,7 @@ uptickd keys show mykey --bech cons
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 ## Querying an Account
 

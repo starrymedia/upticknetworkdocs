@@ -38,7 +38,7 @@ $ nvm install node
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 You can verify that everything is installed correctly by querying the version for each package:
 
@@ -116,7 +116,7 @@ module.exports = {
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 To ensure you are targeting the correct network, you can query for a list of accounts available to you from your default network provider:
 
@@ -180,7 +180,7 @@ npx hardhat run --network https://json-rpc.origin.uptick.network scripts/sample-
 ```
 
 {% endhint %}
-{% endhint %}:
+
 
 Finally, try running a Hardhat test:
 
