@@ -9,7 +9,3 @@ This folder contains introduction material for Uptick.
 5. [Resources](resources.md)
 
 After reading the introduction material, head over to the [basics](../basics/README/) to learn more.
-
-## Next {hide}
-
-Get an high-level [overview](overview/) of Uptick {hide}
