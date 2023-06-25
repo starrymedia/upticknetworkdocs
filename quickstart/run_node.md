@@ -1,23 +1,18 @@
-<!--
-order: 4
--->
-
 # Run a Node
 
-Configure and run an Uptick node 
+Configure and run an Uptick node
 
 ## Pre-requisite Readings
 
-- [Installation](./installation.md) 
-- [`uptickd`](./binary.md) 
+* [Installation](installation.md)
+* [`uptickd`](binary.md)
 
 ## Automated deployment
 
 Run the local node by running the `init.sh` script in the base directory of the repository.
 
-:{% hint style="info" %}
-The script below will remove any pre-existing binaries installed. Use the manual deploy if you want
-to keep your binaries and configuration files.
+{% hint style="info" %}
+The script below will remove any pre-existing binaries installed. Use the manual deploy if you want to keep your binaries and configuration files.
 {% endhint %}
 
 ```bash
@@ -26,8 +21,7 @@ to keep your binaries and configuration files.
 
 ## Manual deployment
 
-The instructions for setting up a brand new full node from scratch are the the same as running a
-[single node local testnet](./../guides/localnet/single_node.md#manual-localnet).
+The instructions for setting up a brand new full node from scratch are the the same as running a [single node local testnet](../guides/localnet/single\_node.md#manual-localnet).
 
 ## Start node
 
@@ -55,7 +49,7 @@ You can generate a new key/mnemonic with:
 uptickd keys add $KEY
 ```
 
-To export your uptick key as an Ethereum private key (for use with [Metamask](./../guides/keys-wallets/metamask) for example):
+To export your uptick key as an Ethereum private key (for use with [Metamask](../guides/keys-wallets/metamask/) for example):
 
 ```bash
 uptickd keys unsafe-export-eth-key $KEY
@@ -69,19 +63,14 @@ uptickd keys -h
 
 ### Keyring backend options
 
-The instructions above include commands to use `test` as the `keyring-backend`. This is an unsecured
-keyring that doesn't require entering a password and should not be used in production. Otherwise,
-Uptick supports using a file or OS keyring backend for key storage. To create and use a file
-stored key instead of defaulting to the OS keyring, add the flag `--keyring-backend file` to any
-relevant command and the password prompt will occur through the command line. This can also be saved
-as a CLI config option with:
+The instructions above include commands to use `test` as the `keyring-backend`. This is an unsecured keyring that doesn't require entering a password and should not be used in production. Otherwise, Uptick supports using a file or OS keyring backend for key storage. To create and use a file stored key instead of defaulting to the OS keyring, add the flag `--keyring-backend file` to any relevant command and the password prompt will occur through the command line. This can also be saved as a CLI config option with:
 
 ```bash
 uptickd config keyring-backend file
 ```
 
 {% hint style="info" %}
-For more information about the Keyring and its backend options, click [here](./../guides/keys-wallets/keyring).
+For more information about the Keyring and its backend options, click [here](../guides/keys-wallets/keyring/).
 {% endhint %}
 
 ## Clearing data from chain
@@ -118,8 +107,9 @@ rm -rf ~/.uptickd
 To clear all data except key storage (if keyring backend chosen) and then you can rerun the full node installation commands from above to start the node again.
 
 ## Recording Transactions Per Second (TPS)
-In order to get a progressive value of the transactions per second, we use Prometheus to return the values.
-The Prometheus exporter runs at address "http://localhost:8877" so please add this section to your [Prometheus installation](https://opencensus.io/codelabs/prometheus/#1) config.yaml file like this
+
+In order to get a progressive value of the transactions per second, we use Prometheus to return the values. The Prometheus exporter runs at address "http://localhost:8877" so please add this section to your [Prometheus installation](https://opencensus.io/codelabs/prometheus/#1) config.yaml file like this
+
 ```yaml
 global:
   scrape_interval: 10s
@@ -137,6 +127,7 @@ scrape_configs:
 ```
 
 and then run Prometheus like this
+
 ```shell
 prometheus --config.file=prom_config.yaml
 ```
@@ -148,4 +139,3 @@ rate(uptickd_transactions_processed[1m])
 ```
 
 which will show the rate of transactions processed.
-

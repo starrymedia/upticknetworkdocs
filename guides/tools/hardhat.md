@@ -17,8 +17,8 @@ Learn how to deploy a simple Solidity-based smart contract to Uptick using the H
 
 Before proceeding, you need to install Node.js (we'll use v16.x) and the npm package manager. You can download directly from [Node.js](https://nodejs.org/en/download/) or in your terminal:
 
-
- Ubuntu
+{% endhint %}: tabs
+{% endhint %} tab Ubuntu
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -27,7 +27,7 @@ sudo apt install -y nodejs
 ```
 
 {% endhint %}
- MacOS
+{% endhint %} tab MacOS
 
 ```bash
 # You can use homebrew (https://docs.brew.sh/Installation)
@@ -79,8 +79,8 @@ Welcome to Hardhat v2.0.8
 
 Following the prompts should create a new project structure in your directory. Consult the [Hardhat config page](https://hardhat.org/config/) for a list of configuration options to specify in `hardhat.config.js`. Most importantly, you should set the `defaultNetwork` entry to point to your desired JSON-RPC network:
 
-
- Local Node
+{% endhint %}: tabs
+{% endhint %} tab Local Node
 
 ```javascript
 module.exports = {
@@ -98,7 +98,7 @@ module.exports = {
 ```
 
 {% endhint %}
- Testnet
+{% endhint %} tab Testnet
 
 ```javascript
 module.exports = {
@@ -165,15 +165,15 @@ npx hardhat run scripts/sample-script.js
 
 Hardhat also lets you manually specify a target network via the `--network <your-network>` flag:
 
-
- Local Node
+{% endhint %}: tabs
+{% endhint %} tab Local Node
 
 ```bash
 npx hardhat run --network http://localhost:8545 scripts/sample-script.js
 ```
 
 {% endhint %}
- Testnet
+{% endhint %} tab Testnet
 
 ```bash
 npx hardhat run --network https://json-rpc.origin.uptick.network scripts/sample-script.js
