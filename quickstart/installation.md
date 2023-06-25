@@ -21,7 +21,7 @@ Uptick is built using [Go](https://golang.org/dl/) version `1.18+`
 go version
 ```
 
-:::tip
+{% hint style="info" %}
 If the `uptickd: command not found` error message is returned, confirm that your [`GOPATH`](https://golang.org/doc/gopath_code#GOPATH) is correctly configured by running the following command:
 
 ```bash
@@ -34,7 +34,7 @@ echo "export PATH=$PATH:$GOBIN" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-:::
+{% endhint %}
 
 ## Install Binaries
 

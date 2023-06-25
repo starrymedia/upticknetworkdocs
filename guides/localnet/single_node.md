@@ -129,9 +129,9 @@ Now that everything is set up, you can finally start your node:
 uptickd start
 ```
 
-:::tip
+{% hint style="info" %}
 To check all the available customizable options when running the node, use the `--help` flag.
-:::
+{% endhint %}
 
 You should see blocks come in.
 

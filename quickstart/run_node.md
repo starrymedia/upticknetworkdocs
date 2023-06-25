@@ -80,9 +80,9 @@ as a CLI config option with:
 uptickd config keyring-backend file
 ```
 
-:::tip
+{% hint style="info" %}
 For more information about the Keyring and its backend options, click [here](./../guides/keys-wallets/keyring).
-:::
+{% endhint %}
 
 ## Clearing data from chain
 

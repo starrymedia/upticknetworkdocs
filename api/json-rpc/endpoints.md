@@ -158,9 +158,9 @@ Check the JSON-RPC methods supported on Uptick.
 | [`txpool_inspect`](#txpool-inspect)                                               | TxPool    | ✔           |        |                    |
 | [`txpool_status`](#txpool-status)                                                 | TxPool    | ✔           |        |                    |
 
-:::tip
+{% hint style="info" %}
 Block Number can be entered as a Hex string, `"earliest"`, ``"latest"`` or `"pending"`.
-:::
+{% endhint %}
 
 Below is a list of the RPC methods, the parameters and an example response from the namespaces.
 
