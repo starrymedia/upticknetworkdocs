@@ -83,4 +83,4 @@
 * [Resources](resources/README.md)
   * [Uptick API Reference](https://pkg.go.dev/github.com/UptickNetwork/uptick)
   * [Ethermint Library API Reference](https://pkg.go.dev/github.com/tharsis/ethermint)
-  * [JSON-RPC Reference](api/json-rpc/endpoints.md)
+  *
