@@ -6,7 +6,7 @@ order: 2
 
 Connect your MetaMask wallet with Uptick 
 
-The MetaMask browser extension is a wallet for accessing Ethereum-enabled applications and managing user identities. It can be used to connect to {{ $themeConfig.project.name }} through the official testnet or via a locally-running {{ $themeConfig.project.name }} node.
+The MetaMask browser extension is a wallet for accessing Ethereum-enabled applications and managing user identities. It can be used to connect to Uptick through the official testnet or via a locally-running Uptick node.
 
 ::: tip
 If you are planning on developing on Uptick locally and you haven’t already set up your own local node, refer to [the quickstart tutorial](../../quickstart/run_node/), or follow the instructions in the [GitHub repository](https://github.com/UptickNetwork/uptick/).
@@ -27,7 +27,7 @@ Here is the list of fields that you can use to paste on Metamask:
 :::: tabs
 ::: tab Testnet
 
-- **Network Name:** `{{ $themeConfig.project.name }} Testnet`
+- **Network Name:** `Uptick Testnet`
 - **New RPC URL:** `{{ $themeConfig.project.rpc_url_testnet }}`
 - **Chain ID:** `7000`
 - **Currency Symbol (optional):** `{{ $themeConfig.project.testnet_ticker }}`
@@ -35,7 +35,7 @@ Here is the list of fields that you can use to paste on Metamask:
   :::
   ::: tab Local Node
 
-- **Network Name:** `{{ $themeConfig.project.name }} Local`
+- **Network Name:** `Uptick Local`
 - **New RPC URL:** `{{ $themeConfig.project.rpc_url_local }}`
 - **Chain ID:** `7000`
 - **Currency Symbol (optional):** `{{ $themeConfig.project.testnet_ticker }}`
@@ -62,7 +62,7 @@ Go back to the browser and select the `Private Key` option. Then paste the priva
 Your account balance should show up as `1 {{ $themeConfig.project.testnet_ticker }}` and do transfers as usual.
 
 ::: tip
-If it takes some time to load the balance of the account, change the network to `Main Ethereum Network` (or any other than `Localhost 8545` or `{{ $themeConfig.project.name }}`) and then switch back to `{{ $themeConfig.project.name }}`.
+If it takes some time to load the balance of the account, change the network to `Main Ethereum Network` (or any other than `Localhost 8545` or `Uptick`) and then switch back to `Uptick`.
 :::
 
 ## Reset Account

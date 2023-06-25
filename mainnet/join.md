@@ -16,15 +16,15 @@ You specify the network you want to join by setting the **genesis file** and **s
 
 ## Install `uptickd`
 
-Follow the [installation](./../quickstart/installation) document to install the {{ $themeConfig.project.name }} binary `{{ $themeConfig.project.binary }}`.
+Follow the [installation](./../quickstart/installation) document to install the Uptick binary `uptickd`.
 
 :::warning
-Make sure you have the right version of `{{ $themeConfig.project.binary }}` installed.
+Make sure you have the right version of `uptickd` installed.
 :::
 
 ### Save Chain ID
 
-We recommend saving the mainnet `chain-id` into your `{{ $themeConfig.project.binary }}`'s `client.toml`. This will make it so you do not have to manually pass in the `chain-id` flag for every CLI command.
+We recommend saving the mainnet `chain-id` into your `uptickd`'s `client.toml`. This will make it so you do not have to manually pass in the `chain-id` flag for every CLI command.
 
 ::: tip
 See the Official [Chain IDs](./../basics/chain_id.md#official-chain-ids) for reference.

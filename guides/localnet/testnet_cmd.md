@@ -5,9 +5,9 @@ order: 3
 
 # Testnet command
 
-The `{{ $themeConfig.project.binary }} testnet` subcommand makes it easy to initialize and start a simulated test network for testing purposes. 
+The `uptickd testnet` subcommand makes it easy to initialize and start a simulated test network for testing purposes. 
 
-In addition to the commands for [running a node](./../../quickstart/run_node.md), the `{{ $themeConfig.project.binary }}` binary also includes a `testnet` command that allows you to start a simulated test network in-process or to initialize files for a simulated test network that runs in a separate process.
+In addition to the commands for [running a node](./../../quickstart/run_node.md), the `uptickd` binary also includes a `testnet` command that allows you to start a simulated test network in-process or to initialize files for a simulated test network that runs in a separate process.
 
 ## Initialize Files
 
@@ -35,7 +35,7 @@ The `gentxs` directory includes a genesis transaction for each validator node. E
 
 ## Nodes
 
-A node directory is created for each validator node. Within each node directory is a `{{ $themeConfig.project.binary }}` directory. The `{{ $themeConfig.project.binary }}` directory is the home directory for each node, which includes the configuration and data files for that node (i.e. the same files included in the default `~/.{{ $themeConfig.project.binary }}` directory when running a single node).
+A node directory is created for each validator node. Within each node directory is a `uptickd` directory. The `uptickd` directory is the home directory for each node, which includes the configuration and data files for that node (i.e. the same files included in the default `~/.uptickd` directory when running a single node).
 
 ## Start Testnet
 

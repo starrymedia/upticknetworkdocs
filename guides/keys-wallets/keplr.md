@@ -10,7 +10,7 @@ Connect your Keplr wallet with Uptick
 
 - [Install Keplr](https://www.keplr.app/) {prereq}
 
-The Keplr browser extension is a wallet for accessing applications in the Cosmos ecosystem and managing user identities. It can be used to connect to {{ $themeConfig.project.name }} through the official testnet and request Funds from the Faucet.
+The Keplr browser extension is a wallet for accessing applications in the Cosmos ecosystem and managing user identities. It can be used to connect to Uptick through the official testnet and request Funds from the Faucet.
 
 ## Install Keplr
 
@@ -22,7 +22,7 @@ Open the Keplr extension on your browser. If you are setting up Keplr for the fi
 
 ## Connect to Uptick Testnet and Request Funds from the Faucet
 
-Once you are signed in to the Keplr extension, visit the [Faucet](https://faucet.uptick.org/) and click the `Request Funds with Keplr` button. Then approve the both following pop ups `Chain Add Request` and `Request Connection` to add the {{ $themeConfig.project.name }} testnet chain (`uptick_7000-2`) to Keplr and approve the connection.
+Once you are signed in to the Keplr extension, visit the [Faucet](https://faucet.uptick.org/) and click the `Request Funds with Keplr` button. Then approve the both following pop ups `Chain Add Request` and `Request Connection` to add the Uptick testnet chain (`uptick_7000-2`) to Keplr and approve the connection.
 
 ![chain add request](./../img/keplr_approve_chain.png)
 

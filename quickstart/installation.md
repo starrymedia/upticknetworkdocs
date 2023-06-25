@@ -39,12 +39,12 @@ source ~/.bashrc
 ## Install Binaries
 
 ::: tip
-The latest {{ $themeConfig.project.name }} [version](https://github.com/UptickNetwork/uptick/releases) is `{{ $themeConfig.project.binary }} {{ $themeConfig.project.latest_version }}`
+The latest Uptick [version](https://github.com/UptickNetwork/uptick/releases) is `uptickd v0.2.4`
 :::
 
 ### GitHub
 
-Clone and build {{ $themeConfig.project.name }} using `git`:
+Clone and build Uptick using `git`:
 
 ```bash
 git clone https://github.com/UptickNetwork/uptick.git
@@ -53,7 +53,7 @@ git checkout <version>
 make install
 ```
 
-Check that the `{{ $themeConfig.project.binary }}` binaries have been successfully installed:
+Check that the `uptickd` binaries have been successfully installed:
 
 ```bash
 uptickd version
