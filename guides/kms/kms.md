@@ -16,9 +16,9 @@ It is recommended that the KMS service runs in a separate physical hosts.
 
 Detailed build instructions can be found [here](https://github.com/iqlusioninc/tmkms#installation).
 
-::: tip
+{% hint style="info" %}
 When compiling the KMS, ensure you have enabled the applicable features:
-:::
+{% endhint %}
 
 | Backend                 | Recommended Command line          |
 | ----------------------- | --------------------------------- |

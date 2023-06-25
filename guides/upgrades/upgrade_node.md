@@ -22,9 +22,9 @@ git fetch --all && git checkout <new_version>
 make install
 ```
 
-::: tip
+{% hint style="info" %}
 If you have issues at this step, please check that you have the latest stable version of GO installed.
-:::
+{% endhint %}
 
 You will need to ensure that the version installed matches the one needed for th testnet. Check the Uptick [release page](https://github.com/UptickNetwork/uptick/releases) for details on each release.
 
@@ -201,11 +201,11 @@ systemctl status uptickd
 
 #### Upgrade Genesis File
 
-:::warning
+{% endhint %}warning
 If the new version you are upgrading to has breaking changes, you will have to [export](#export-state) the state  and [restart](#restart-node) your node.
 
 If it is **not** breaking (eg. from `v0.1.x` to `v0.1.<x+1>`), you can skip to [Restart](#restart-node) after installing the new version.
-:::
+{% endhint %}
 
 To upgrade the genesis file, you can either fetch it from a trusted source or export it locally using the `uptickd export` command.
 

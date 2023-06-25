@@ -8,7 +8,7 @@ Learn how Uptick handles pending state queries.
 
 ## Pre-requisite Readings
 
-- [Tendermint Mempool](https://docs.tendermint.com/master/tendermint-core/mempool.htm) {prereq}
+- [Tendermint Mempool](https://docs.tendermint.com/master/tendermint-core/mempool.htm) 
 
 ## Uptick vs Ethereum
 

@@ -8,25 +8,25 @@ Learn about the Uptick chain-id format
 
 ## Official Chain IDs
 
-:::: tabs
-::: tab Testnets
+{% endhint %}: tabs
+{% endhint %} tab Testnets
 
 | Name                              | Chain ID                                              | Identifier | EIP155 Number                                 | Version Number                                      |
 |-----------------------------------|-------------------------------------------------------|------------|-----------------------------------------------|-----------------------------------------------------|
 | Uptick Origin Testnet                | `origin_7000-1` | `uptick`    | `7000` | `1`                                                 |
 
-:::
-::: tab Mainnet
+{% endhint %}
+{% endhint %} tab Mainnet
 
 | Name                                            | Chain ID                                      | Identifier | EIP155 Number                         | Version Number                            |
 |-------------------------------------------------|-----------------------------------------------|------------|---------------------------------------|-------------------------------------------|
 | Uptick | `uptick_117-1` | `uptick`    | `117` | {{ $themeConfig.project.version_number }} |
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
-::: tip
+{% hint style="info" %}
 You can also lookup the [EIP155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) `Chain ID` by referring to [chainlist.org](https://chainlist.org/).
-:::
+{% endhint %}
 
 ## The Chain Identifier
 
@@ -52,19 +52,19 @@ The format for specifying and Uptick compatible chain-id in genesis is the follo
 
 The following table provides an example where the second row corresponds to an upgrade from the first one:
 
-:::: tabs
-::: tab Testnets
+{% endhint %}: tabs
+{% endhint %} tab Testnets
 
 | ChainID        | Identifier | EIP155 Number | Version Number |
 |----------------|------------|---------------|----------------|
 | `origin_1170-1` | uptick      | 1170          | 1              |
 
-:::
-::: tab Mainnet
+{% endhint %}
+{% endhint %} tab Mainnet
 
 | ChainID        | Identifier | EIP155 Number | Version Number |
 |----------------|------------|---------------|----------------|
 | `uptick_117-1` | uptick      | 117          | 1              |
 
-:::
-::::
+{% endhint %}
+{% endhint %}:

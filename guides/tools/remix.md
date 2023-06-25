@@ -8,17 +8,17 @@ Learn how to deploy a simple Solidity-based smart contract to Uptick using the R
 
 ## Pre-requisite Readings
 
-- [Installation](./../../quickstart/installation.md) {prereq}
-- [Run a node](./../../quickstart/run_node.md) {prereq}
-- [MetaMask](../keys-wallets/metamask.md) {prereq}
+- [Installation](./../../quickstart/installation.md) 
+- [Run a node](./../../quickstart/run_node.md) 
+- [MetaMask](../keys-wallets/metamask.md) 
 
 [Remix](http://remix.ethereum.org/) is an in-browser IDE for [Solidity](https://github.com/ethereum/solidity) smart contracts. In this guide, we will learn how to deploy a contract to a running Uptick network through Remix and interact with it.
 
 ## Connect Uptick account to Remix
 
-::: tip
+{% hint style="info" %}
 If you haven’t already, follow the steps in the [Metamask guide](../keys-wallets/metamask.md) to import your Uptick private key into Metamask. Start the Uptick daemon and REST server.
-:::
+{% endhint %}
 
 Go to [Remix](http://remix.ethereum.org/). There are some contracts in the File Explorer. Replace these with the source code to `Counter.sol` below. On the left-most bar, select the Solidity Compiler and compile the contract.
 

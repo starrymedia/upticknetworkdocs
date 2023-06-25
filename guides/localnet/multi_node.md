@@ -6,9 +6,9 @@ order: 2
 
 ## Pre-requisite Readings
 
-- [Install Starport](https://docs.starport.network/#install-starport)  {prereq}
-- [Install Docker](https://docs.docker.com/engine/installation/)  {prereq}
-- [Install docker-compose](https://docs.docker.com/compose/install/)  {prereq}
+- [Install Starport](https://docs.starport.network/#install-starport)  
+- [Install Docker](https://docs.docker.com/engine/installation/)  
+- [Install docker-compose](https://docs.docker.com/compose/install/)  
 
 ## Automated Localnet with Starport
 
@@ -144,10 +144,10 @@ I[2020-07-29|17:34:09.383] Committed state                              module=s
 I[2020-07-29|17:34:14.700] Executed block                               module=state height=91 validTxs=0 invalidTxs=0
 ```
 
-::: tip
+{% hint style="info" %}
 You can disregard the `Can't add peer's address to addrbook` warning. As long as the blocks are
 being produced and the app hashes are the same for each node, there should not be any issues.
-:::
+{% endhint %}
 
 Whereas the logs for the REST & RPC server would look like:
 
@@ -182,9 +182,9 @@ You can send a curl command such as:
 curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}' -H "Content-Type: application/json" 192.162.10.1:8545
 ```
 
-::: tip
+{% hint style="info" %}
 The IP address will be the public IP of the docker container.
-:::
+{% endhint %}
 
 Additional instructions on how to interact with the WebSocket can be found on the [events documentation](./events.md#ethereum-websocket).
 
@@ -200,9 +200,9 @@ uptickd keys list --home ./build/node0/uptickd
 Now that accounts exists, you may create new accounts and send those accounts
 funds!
 
-::: tip
+{% hint style="info" %}
 **Note**: Each node's seed is located at `./build/nodeN/uptickd/key_seed.json` and can be restored to the CLI using the `uptickd keys add --restore` command
-:::
+{% endhint %}
 
 ### Special Binaries
 

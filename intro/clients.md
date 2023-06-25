@@ -20,9 +20,9 @@ wallets and block explorers to interact with the proof-of-stake logic and native
 Uptick also supports most of the standard web3 [JSON-RPC
 APIs](./../api/json-rpc/running_server) to connect with existing web3 tooling.
 
-::: tip
+{% hint style="info" %}
 See the list of supported JSON-RPC API [endpoints](./../api/json-rpc/endpoints) and [namespaces](./../api/json-rpc/namespaces).
-:::
+{% endhint %}
 
 To connect to the JSON-PRC server, start the node with the `--json-rpc.enable=true` flag and define the namespaces that you would like to run using the `--evm.rpc.api` flag (e.g. `"txpool,eth,web3,net,personal"`. Then, you can point any Ethereum development tooling to `http://localhost:8545` or whatever port you choose with the listen address flag (`--json-rpc.address`).
 

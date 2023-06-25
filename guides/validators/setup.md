@@ -8,8 +8,8 @@ Learn how to setup and run a validator node
 
 ## Pre-requisite Readings
 
-- [Validator Overview](./overview.md) {prereq}
-- [Full Node Setup](../localnet/single_node.md#manual-localnet) {prereq}
+- [Validator Overview](./overview.md) 
+- [Full Node Setup](../localnet/single_node.md#manual-localnet) 
 
 If you plan to use a Key Management System (KMS), you should go through these steps first: [Using a KMS](./../kms/kms.md).
 
@@ -17,9 +17,9 @@ If you plan to use a Key Management System (KMS), you should go through these st
 
 [Validators](./overview.md) are responsible for committing new blocks to the blockchain through voting. A validator's stake is slashed if they become unavailable or sign blocks at the same height. Please read about [Sentry Node Architecture](./validator-faq.md#how-can-validators-protect-themselves-from-denial-of-service-attacks) to protect your node from DDoS attacks and to ensure high-availability.
 
-::: danger Warning
+{% hint style="info" %} Warning
 If you want to become a validator for the Hub's `mainnet`, you should [research security](./security.md).
-:::
+{% endhint %}
 
 ## Supported OS
 
@@ -63,13 +63,13 @@ uptickd tx staking create-validator \
   --from=<key_name>
 ```
 
-::: tip
+{% hint style="info" %}
 When specifying commission parameters, the `commission-max-change-rate` is used to measure % _point_ change over the `commission-rate`. E.g. 1% to 2% is a 100% rate increase, but only 1 percentage point.
-:::
+{% endhint %}
 
-::: tip
+{% hint style="info" %}
 `Min-self-delegation` is a strictly positive integer that represents the minimum amount of self-delegated voting power your validator must always have. A `min-self-delegation` of `1000000` means your validator will never have a self-delegation lower than `1 auptick`
-:::
+{% endhint %}
 
 You can confirm that you are in the validator set by using a third party explorer.
 
@@ -86,9 +86,9 @@ uptickd tendermint show-validator
 
 Next, craft your `uptickd gentx` command.
 
-::: tip
+{% hint style="info" %}
 A `gentx` is a JSON file carrying a self-delegation. All genesis transactions are collected by a `genesis coordinator` and validated against an initial `genesis.json`.
-:::
+{% endhint %}
 
 ```bash
 uptickd gentx \
@@ -100,9 +100,9 @@ uptickd gentx \
   --name <key_name>
 ```
 
-::: tip
+{% hint style="info" %}
 When specifying commission parameters, the `commission-max-change-rate` is used to measure % _point_ change over the `commission-rate`. E.g. 1% to 2% is a 100% rate increase, but only 1 percentage point.
-:::
+{% endhint %}
 
 You can then submit your `gentx` on the [launch repository](https://github.com/cosmos/launch). These `gentx` will be used to form the final genesis file.
 
@@ -171,9 +171,9 @@ uptickd query tendermint-validator-set | grep "$(uptickd tendermint show-address
 
 You should now see your validator in one of Uptick explorers. You are looking for the `bech32` encoded `address` in the `~/.uptickd/config/priv_validator.json` file.
 
-::: warning Note
+:{% hint style="info" %} Note
 To be in the validator set, you need to have more total voting power than the 100th validator.
-:::
+{% endhint %}
 
 ## Halting Your Validator
 

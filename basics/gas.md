@@ -8,8 +8,8 @@ Learn about the differences between `Gas` and `Fees` in Ethereum and Cosmos.
 
 ## Pre-requisite Readings
 
-- [Cosmos SDK Gas](https://docs.cosmos.network/master/basics/gas-fees.html) {prereq}
-- [Ethereum Gas](https://ethereum.org/en/developers/docs/gas/) {prereq}
+- [Cosmos SDK Gas](https://docs.cosmos.network/master/basics/gas-fees.html) 
+- [Ethereum Gas](https://ethereum.org/en/developers/docs/gas/) 
 
 The concept of Gas represents the amount of computational effort required to execute specific operations on the state machine.
 

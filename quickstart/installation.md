@@ -4,8 +4,8 @@ Build and install the Uptick binaries from source or using Docker.
 
 ## Pre-requisites
 
-* [Install Go 1.18+](https://golang.org/dl/) {prereq}
-* [Install jq](https://stedolan.github.io/jq/download/) {prereq}
+* [Install Go 1.18+](https://golang.org/dl/) 
+* [Install jq](https://stedolan.github.io/jq/download/) 
 
 ## Install Go
 

@@ -10,15 +10,15 @@ Learn how to deploy a simple Solidity-based smart contract to Uptick using the H
 
 ## Pre-requisite Readings
 
-- [Installation](./../../quickstart/installation.md) {prereq}
-- [Run a node](./../../quickstart/run_node.md) {prereq}
+- [Installation](./../../quickstart/installation.md) 
+- [Run a node](./../../quickstart/run_node.md) 
 
 ## Install Dependencies
 
 Before proceeding, you need to install Node.js (we'll use v16.x) and the npm package manager. You can download directly from [Node.js](https://nodejs.org/en/download/) or in your terminal:
 
-:::: tabs
-::: tab Ubuntu
+{% endhint %}: tabs
+{% endhint %} tab Ubuntu
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -26,8 +26,8 @@ curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
-:::
-::: tab MacOS
+{% endhint %}
+{% endhint %} tab MacOS
 
 ```bash
 # You can use homebrew (https://docs.brew.sh/Installation)
@@ -37,8 +37,8 @@ $ brew install node
 $ nvm install node
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 You can verify that everything is installed correctly by querying the version for each package:
 
@@ -50,9 +50,9 @@ $ npm -v
 ...
 ```
 
-::: tip
+{% hint style="info" %}
 If you haven't already, you will also need to install Uptick if you plan on deploying your smart contracts locally. Check this [document](./../../quickstart/installation.md) for the full instructions.
-:::
+{% endhint %}
 
 ## Create Hardhat Project
 
@@ -79,8 +79,8 @@ Welcome to Hardhat v2.0.8
 
 Following the prompts should create a new project structure in your directory. Consult the [Hardhat config page](https://hardhat.org/config/) for a list of configuration options to specify in `hardhat.config.js`. Most importantly, you should set the `defaultNetwork` entry to point to your desired JSON-RPC network:
 
-:::: tabs
-::: tab Local Node
+{% endhint %}: tabs
+{% endhint %} tab Local Node
 
 ```javascript
 module.exports = {
@@ -97,8 +97,8 @@ module.exports = {
 }
 ```
 
-:::
-::: tab Testnet
+{% endhint %}
+{% endhint %} tab Testnet
 
 ```javascript
 module.exports = {
@@ -115,8 +115,8 @@ module.exports = {
 }
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 To ensure you are targeting the correct network, you can query for a list of accounts available to you from your default network provider:
 
@@ -165,22 +165,22 @@ npx hardhat run scripts/sample-script.js
 
 Hardhat also lets you manually specify a target network via the `--network <your-network>` flag:
 
-:::: tabs
-::: tab Local Node
+{% endhint %}: tabs
+{% endhint %} tab Local Node
 
 ```bash
 npx hardhat run --network http://localhost:8545 scripts/sample-script.js
 ```
 
-:::
-::: tab Testnet
+{% endhint %}
+{% endhint %} tab Testnet
 
 ```bash
 npx hardhat run --network https://json-rpc.origin.uptick.network scripts/sample-script.js
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 Finally, try running a Hardhat test:
 

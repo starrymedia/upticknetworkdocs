@@ -8,17 +8,17 @@ Configure and run an Uptick node
 
 ## Pre-requisite Readings
 
-- [Installation](./installation.md) {prereq}
-- [`uptickd`](./binary.md) {prereq}
+- [Installation](./installation.md) 
+- [`uptickd`](./binary.md) 
 
 ## Automated deployment
 
 Run the local node by running the `init.sh` script in the base directory of the repository.
 
-::: warning
+:{% hint style="info" %}
 The script below will remove any pre-existing binaries installed. Use the manual deploy if you want
 to keep your binaries and configuration files.
-:::
+{% endhint %}
 
 ```bash
 ./init.sh
@@ -45,9 +45,9 @@ To run a node with the same key every time: replace `uptickd keys add $KEY` in `
 echo "your mnemonic here" | uptickd keys add $KEY --recover
 ```
 
-::: tip
+{% hint style="info" %}
 Uptick currently only supports 24 word mnemonics.
-:::
+{% endhint %}
 
 You can generate a new key/mnemonic with:
 
@@ -90,13 +90,13 @@ For more information about the Keyring and its backend options, click [here](./.
 
 Alternatively, you can **reset** the blockchain database, remove the node's address book files, and reset the `priv_validator.json` to the genesis state.
 
-::: danger
+{% hint style="info" %}
 If you are running a **validator node**, always be careful when doing `uptickd tendermint unsafe-reset-all`. You should never use this command if you are not switching `chain-id`.
-:::
+{% endhint %}
 
-::: danger
+{% hint style="info" %}
 **IMPORTANT**: Make sure that every node has a unique `priv_validator.json`. **Do not** copy the `priv_validator.json` from an old node to multiple new nodes. Running two nodes with the same `priv_validator.json` will cause you to double sign!
-:::
+{% endhint %}
 
 First, remove the outdated files and reset the data.
 

@@ -6,7 +6,7 @@ order: 1
 
 ## Pre-requisite Readings
 
-- [Install Binary](./../../quickstart/installation)  {prereq}
+- [Install Binary](./../../quickstart/installation)  
 
 ## Automated Localnet (script)
 
@@ -54,9 +54,9 @@ $CHAINID="origin_1170-1"
 uptickd init $MONIKER --chain-id=$CHAINID
 ```
 
-::: tip
+{% hint style="info" %}
 You can [edit](./../../quickstart/binary.md#configuring-the-node) this `moniker` later by updating the `config.toml` file.
-:::
+{% endhint %}
 
 The command above creates all the configuration files needed for your node and validator to run, as well as a default genesis file, which defines the initial state of the network. All these [configuration files](./../../quickstart/binary.md#configuring-the-node) are in `~/.uptickd` by default, but you can overwrite the location of this folder by passing the `--home` flag.
 

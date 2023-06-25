@@ -23,9 +23,9 @@ Learn about Uptick with the list of official resources.
 
 ### Cosmos Blog
 
-::: tip
+{% hint style="info" %}
 Note: most of these articles are outdated as they refer to the previous Ethermint projects (linked below). They are listed here for reference only.
-:::
+{% endhint %}
 
 - [Ethermint Supports Web3 Personal API - Colin Schwarz](https://blog.cosmos.network/ethermint-supports-web3-personal-api-556adf75c24e)
 - [The Road to Ethermint - Colin Schwarz](https://blog.cosmos.network/the-road-to-ethermint-836c0745f535)

@@ -18,17 +18,17 @@ You specify the network you want to join by setting the **genesis file** and **s
 
 Follow the [installation](./../quickstart/installation) document to install the Uptick binary `uptickd`.
 
-:::warning
+{% endhint %}warning
 Make sure you have the right version of `uptickd` installed.
-:::
+{% endhint %}
 
 ### Save Chain ID
 
 We recommend saving the mainnet `chain-id` into your `uptickd`'s `client.toml`. This will make it so you do not have to manually pass in the `chain-id` flag for every CLI command.
 
-::: tip
+{% hint style="info" %}
 See the Official [Chain IDs](./../basics/chain_id.md#official-chain-ids) for reference.
-:::
+{% endhint %}
 
 ```bash
 uptickd config chain-id uptick_117-1
@@ -56,13 +56,13 @@ The final step is to [start the nodes](./../quickstart/run_node#start-node). Onc
 uptickd start
 ```
 
-::: tip
+{% hint style="info" %}
 You may see some connection errors, it does not matter, the P2P network is trying to find available connections
 
 Try to add some of the [Community Peers](https://github.com/UptickNetwork/uptick-mainnet/tree/main/uptick_117-1) to persistent_peers in the config.toml
 
 If you want to quickly start the node and join Uptick without historical data, you can consider using the [state_sync](./../guides/statesync/statesync.md) function.
-:::
+{% endhint %}
 
 
 
@@ -104,9 +104,9 @@ Confirm your node has caught-up
 uptickd status | jq .sync_info.catching_up
 ```
 
-::: tip
+{% hint style="info" %}
 For more details on how to configure your validator, follow the validator [setup](./../guides/validators/setup.md) instructions.
-:::
+{% endhint %}
 ```bash
 uptickd tx staking create-validator \
   --amount=5000000000000000000auptick \
@@ -129,9 +129,9 @@ uptickd tx staking create-validator \
 
 ### Reset Data
 
-:::warning
+{% endhint %}warning
 If the version <new_version> you are upgrading to is not breaking from the previous one, you **should not** reset the data. If this is the case you can skip to [Restart](#restart)
-:::
+{% endhint %}
 
 First, remove the outdated files and reset the data.
 
@@ -144,9 +144,9 @@ Your node is now in a pristine state while keeping the original `priv_validator.
 your node will still try to connect to them, but may fail if they haven't also
 been upgraded.
 
-::: danger Warning
+{% hint style="info" %} Warning
 Make sure that every node has a unique `priv_validator.json`. Do not copy the `priv_validator.json` from an old node to multiple new nodes. Running two nodes with the same `priv_validator.json` will cause you to double sign.
-:::
+{% endhint %}
 
 ### Restart
 

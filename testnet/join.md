@@ -28,17 +28,17 @@ You specify the network you want to join by setting the **genesis file** and **s
 
 Follow the [installation](./../quickstart/installation) document to install the Uptick binary `uptickd`.
 
-:::warning
+{% endhint %}warning
 Make sure you have the right version of `uptickd` installed.
-:::
+{% endhint %}
 
 ### Save Chain ID
 
 We recommend saving the mainnet `chain-id` into your `uptickd`'s `client.toml`. This will make it so you do not have to manually pass in the `chain-id` flag for every CLI command.
 
-::: tip
+{% hint style="info" %}
 See the Official [Chain IDs](./../basics/chain_id.md#official-chain-ids) for reference.
-:::
+{% endhint %}
 
 ```bash
 uptickd config chain-id origin_1170-1
@@ -98,9 +98,9 @@ uptickd start
 Claim your testnet {{ $themeConfig.project.testnet_denom }} on the [faucet](./faucet.md) using your validator account address and submit your validator account address:
 > NOTE: Until `uptickd status 2>&1 | jq ."SyncInfo"."catching_up"` got false, create your validator. If your validator is jailed, unjail it via `uptickd tx slashing unjail --from <wallet name> --chain-id origin_1170-1 -y -b block`.
 
-::: tip
+{% hint style="info" %}
 For more details on how to configure your validator, follow the validator [setup](./../guides/validators/setup.md) instructions.
-:::
+{% endhint %}
 ```bash
 uptickd tx staking create-validator \
   --amount=5000000000000000000auoc \
@@ -123,9 +123,9 @@ uptickd tx staking create-validator \
 
 ### Reset Data
 
-:::warning
+{% endhint %}warning
 If the version <new_version> you are upgrading to is not breaking from the previous one, you **should not** reset the data. If this is the case you can skip to [Restart](#restart)
-:::
+{% endhint %}
 
 First, remove the outdated files and reset the data.
 
@@ -138,9 +138,9 @@ Your node is now in a pristine state while keeping the original `priv_validator.
 your node will still try to connect to them, but may fail if they haven't also
 been upgraded.
 
-::: danger Warning
+{% hint style="info" %} Warning
 Make sure that every node has a unique `priv_validator.json`. Do not copy the `priv_validator.json` from an old node to multiple new nodes. Running two nodes with the same `priv_validator.json` will cause you to double sign.
-:::
+{% endhint %}
 
 ### Restart
 

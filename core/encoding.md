@@ -8,8 +8,8 @@ Learn about the encoding formats used on Uptick.
 
 ## Pre-requisite Readings
 
-- [Cosmos SDK Encoding](https://docs.cosmos.network/master/core/encoding.html) {prereq}
-- [Ethereum RLP](https://eth.wiki/en/fundamentals/rlp) {prereq}
+- [Cosmos SDK Encoding](https://docs.cosmos.network/master/core/encoding.html) 
+- [Ethereum RLP](https://eth.wiki/en/fundamentals/rlp) 
 
 ## Encoding Formats
 

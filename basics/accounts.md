@@ -8,8 +8,8 @@ This document describes the in-built accounts system of Uptick.
 
 ## Pre-requisite Readings
 
-- [Cosmos SDK Accounts](https://docs.cosmos.network/master/basics/accounts.html) {prereq}
-- [Ethereum Accounts](https://ethereum.org/en/whitepaper/#ethereum-accounts) {prereq}
+- [Cosmos SDK Accounts](https://docs.cosmos.network/master/basics/accounts.html) 
+- [Ethereum Accounts](https://ethereum.org/en/whitepaper/#ethereum-accounts) 
 
 ## Uptick Accounts
 
@@ -55,8 +55,8 @@ Cosmos `sdk.AccAddress`.
 
 The `uptickd debug addr <address>` can be used to convert an address between hex and bech32 formats. For example:
 
-:::: tabs
-::: tab Bech32
+{% endhint %}: tabs
+{% endhint %} tab Bech32
 
 ```bash
 uptickd debug addr uptick1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
@@ -66,8 +66,8 @@ uptickd debug addr uptick1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
   Bech32 Val: uptickvaloper1z3t55m0l9h0eupuz3dp5t5cypyv674jjn4d6nn
 ```
 
-:::
-::: tab Hex
+{% endhint %}
+{% endhint %} tab Hex
 
 ```bash
 uptickd debug addr 14574A6DFF2DDF9E07828B4345D3040919AF5652
@@ -77,20 +77,20 @@ uptickd debug addr 14574A6DFF2DDF9E07828B4345D3040919AF5652
   Bech32 Val: uptickvaloper1z3t55m0l9h0eupuz3dp5t5cypyv674jjn4d6nn
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 ### Key output
 
-::: tip
+{% hint style="info" %}
 The Cosmos SDK Keyring output (i.e `uptickd keys`) only supports addresses and public keys in Bech32 format.
-:::
+{% endhint %}
 
 We can use the `keys show` command of `uptickd` with the flag `--bech <type> (acc|val|cons)` to
 obtain the addresses and keys as mentioned above,
 
-:::: tabs
-::: tab Account
+{% endhint %}: tabs
+{% endhint %} tab Account
 
 ```bash
 uptickd keys show mykey --bech acc
@@ -101,8 +101,8 @@ uptickd keys show mykey --bech acc
   mnemonic: ""
 ```
 
-:::
-::: tab Validator
+{% endhint %}
+{% endhint %} tab Validator
 
 ```bash
 uptickd keys show mykey --bech val
@@ -113,8 +113,8 @@ uptickd keys show mykey --bech val
   mnemonic: ""
 ```
 
-:::
-::: tab Consensus
+{% endhint %}
+{% endhint %} tab Consensus
 
 ```bash
 uptickd keys show mykey --bech cons
@@ -125,8 +125,8 @@ uptickd keys show mykey --bech cons
   mnemonic: ""
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 ## Querying an Account
 

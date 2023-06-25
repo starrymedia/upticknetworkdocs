@@ -8,8 +8,8 @@ Learn about the JSON-RPC server to interact with the EVM.
 
 ## Pre-requisite Readings
 
-- [EthWiki JSON-RPC API](https://eth.wiki/json-rpc/API) {prereq}
-- [Geth JSON-RPC Server](https://geth.ethereum.org/docs/rpc/server) {prereq}
+- [EthWiki JSON-RPC API](https://eth.wiki/json-rpc/API) 
+- [Geth JSON-RPC Server](https://geth.ethereum.org/docs/rpc/server) 
 
 ## JSON-RPC API
 

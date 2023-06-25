@@ -8,7 +8,7 @@ order: 4
 
 ## Pre-requisite Readings
 
-- [Validator Security](./security.md) {prereq}
+- [Validator Security](./security.md) 
 
 ## Conduct Survey on General Controls of Hosting Data Centre
 

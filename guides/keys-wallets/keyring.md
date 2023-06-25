@@ -68,9 +68,9 @@ yes $KEYPASSWD | uptickd keys show me
 uptickd --keyring-backend=file start
 ```
 
-::: tip
+{% hint style="info" %}
 The first time you add a key to an empty keyring, you will be prompted to type the password twice.
-:::
+{% endhint %}
 
 ### Password Store
 
@@ -80,12 +80,12 @@ within app-specific directories. `pass` is available for the most popular UNIX
 operating systems as well as GNU/Linux distributions. Please refer to its manual page for
 information on how to download and install it.
 
-::: tip
+{% hint style="info" %}
 **pass** uses [GnuPG](https://gnupg.org/) for encryption. `gpg` automatically invokes the `gpg-agent`
 daemon upon execution, which handles the caching of GnuPG credentials. Please refer to `gpg-agent`
 man page for more information on how to configure cache parameters such as credentials TTL and
 passphrase expiration.
-:::
+{% endhint %}
 
 The password store must be set up prior to first use:
 
@@ -108,14 +108,14 @@ information.
 The `test` backend is a password-less variation of the `file` backend. Keys are stored
 **unencrypted** on disk.
 
-:::danger
+{% endhint %}danger
 Provided for testing purposes only. The `test` backend is **NOT** recommended for use in production environments.
-:::
+{% endhint %}
 
 ### In Memory
 
 The `memory` backend stores keys in memory. The keys are immediately deleted after the program has exited.
 
-:::danger
+{% endhint %}danger
 Provided for testing purposes only. The `memory` backend is **NOT** recommended for use in production environments.
-:::
+{% endhint %}

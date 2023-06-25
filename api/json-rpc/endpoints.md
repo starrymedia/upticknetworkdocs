@@ -8,8 +8,8 @@ Check the JSON-RPC methods supported on Uptick.
 
 ## Pre-requisite Readings
 
-- [Ethereum JSON-RPC](https://eth.wiki/json-rpc/API) {prereq}
-- [Geth JSON-RPC APIs](https://geth.ethereum.org/docs/rpc/server) {prereq}
+- [Ethereum JSON-RPC](https://eth.wiki/json-rpc/API) 
+- [Geth JSON-RPC APIs](https://geth.ethereum.org/docs/rpc/server) 
 
 ## Endpoints
 
@@ -180,29 +180,29 @@ Get the web3 client version.
 
 #### Client Examples
 
-:::: tabs
-::: tab Shell HTTP
+{% endhint %}: tabs
+{% endhint %} tab Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "web3_clientVersion", "params": []}'
 ```
 
-:::
-::: tab Shell WebSocket
+{% endhint %}
+{% endhint %} tab Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "web3_clientVersion", "params": []}'
 ```
 
-:::
-::: tab Javascript Console
+{% endhint %}
+{% endhint %} tab Javascript Console
 
 ```javascript
 web3.clientVersion();
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 ### `web3_sha3`
 
@@ -222,29 +222,29 @@ Returns Keccak-256 (not the standardized SHA3-256) of the given data.
 
 #### Client Examples
 
-:::: tabs
-::: tab Shell HTTP
+{% endhint %}: tabs
+{% endhint %} tab Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "web3_sha3", "params": [<input>]}'
 ```
 
-:::
-::: tab Shell WebSocket
+{% endhint %}
+{% endhint %} tab Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "web3_sha3", "params": [<input>]}'
 ```
 
-:::
-::: tab Javascript Console
+{% endhint %}
+{% endhint %} tab Javascript Console
 
 ```javascript
 web3.sha3(input);
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 ## Net Methods
 
@@ -458,9 +458,9 @@ The `sign` method calculates an Ethereum specific signature with: `sign(keccak25
 
 By adding a prefix to the message makes the calculated signature recognizable as an Ethereum specific signature. This prevents misuse where a malicious DApp can sign arbitrary data (e.g. transaction) and use the signature to impersonate the victim.
 
-::: warning
+:{% hint style="info" %}
 The address to sign with must be unlocked.
-:::
+{% endhint %}
 
 #### Parameters
 
@@ -858,9 +858,9 @@ Unsubscribe from an event using the subscription id
 
 ### `personal_importRawKey`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Imports the given unencrypted private key (hex encoded string) into the key store, encrypting it with the passphrase.
 
@@ -886,9 +886,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_importRawKey","params":
 
 ### `personal_listAccounts`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Returns a list of addresses for accounts this node manages.
 
@@ -902,9 +902,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_listAccounts","params":
 
 ### `personal_lockAccount`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Removes the private key with given address from memory. The account can no longer be used to send transactions.
 
@@ -922,9 +922,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_lockAccount","params":[
 
 ### `personal_newAccount`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Generates a new private key and stores it in the key store directory. The key file is encrypted with the given passphrase. Returns the address of the new account.
 
@@ -942,9 +942,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_newAccount","params":["
 
 ### `personal_unlockAccount`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Decrypts the key with the given address from the key store.
 
@@ -970,17 +970,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_unlockAccount","params"
 
 ### `personal_sendTransaction`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Validate the given passphrase and submit transaction.
 
 The transaction is the same argument as for [`eth_sendTransaction`](#eth-sendtransaction) and contains the `from` address. If the passphrase can be used to decrypt the private key belonging to `tx.from` the transaction is verified, signed and send onto the network.
 
-:::warning
+{% endhint %}warning
 The account is not unlocked globally in the node and cannot be used in other RPC calls.
-:::
+{% endhint %}
 
 #### Parameters
 
@@ -1004,9 +1004,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","param
 
 ### `personal_sign`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 The sign method calculates an Ethereum specific signature with: `sign(keccack256("\x19Ethereum Signed Message:\n" + len(message) + message)))`,
 
@@ -1028,9 +1028,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_sign","params":["0xdead
 
 ### `personal_ecRecover`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 `ecRecover` returns the address associated with the private key that was used to calculate the signature in [`personal_sign`](#personal-sign).
 
@@ -1050,9 +1050,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_ecRecover","params":["0
 
 ### `personal_initializeWallet`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Initializes a new wallet at the provided URL, by generating and returning a new private key.
 
@@ -1066,36 +1066,36 @@ Parameters must be given by position.
 
 #### Client Examples
 
-:::: tabs
-::: tab Shell HTTP
+{% endhint %}: tabs
+{% endhint %} tab Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "personal_initializeWallet", "params": [<url>]}'
 ```
 
-:::
-::: tab Shell WebSocket
+{% endhint %}
+{% endhint %} tab Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "personal_initializeWallet", "params": [<url>]}'
 ```
 
-:::
-::: tab Javascript Console
+{% endhint %}
+{% endhint %} tab Javascript Console
 
 ```javascript
 personal.initializeWallet(url);
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 
 ### `personal_unpair`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Unpair deletes a pairing between wallet and the node.
 
@@ -1107,29 +1107,29 @@ Unpair deletes a pairing between wallet and the node.
 
 #### Client Examples
 
-:::: tabs
-::: tab Shell HTTP
+{% endhint %}: tabs
+{% endhint %} tab Shell HTTP
 
 ```shell
 curl -X POST -H "Content-Type: application/json" http://localhost:8545 --data '{"jsonrpc": "2.0", "id": 42, "method": "personal_unpair", "params": [<url>, <pin>]}'
 ```
 
-:::
-::: tab Shell WebSocket
+{% endhint %}
+{% endhint %} tab Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "personal_unpair", "params": [<url>, <pin>]}'
 ```
 
-:::
-::: tab Javascript Console
+{% endhint %}
+{% endhint %} tab Javascript Console
 
 ```javascript
 personal.unpair(url,pin);
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 
 
@@ -1172,15 +1172,15 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"debug_traceBlockByNumber","param
 
 ### `miner_getHashrate`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Get the hashrate in H/s (Hash operations per second).
 
-::: warning
+:{% hint style="info" %}
 Proof-of-Work specific. This endpoint always returns `0`.
-:::
+{% endhint %}
 
 ```json
 // Request
@@ -1192,15 +1192,15 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"miner_setGasPrice","params":[],"
 
 ### `miner_setExtra`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Sets the extra data a validator can include when proposing blocks. This is capped at 32 bytes.
 
-::: warning
+:{% hint style="info" %}
 Unsupported. This endpoint always returns an error
-:::
+{% endhint %}
 
 #### Parameters
 
@@ -1216,9 +1216,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"miner_setExtra","params":["data"
 
 ### `miner_setGasPrice`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Sets the minimal gas price used to accept transactions. Any transaction below this limit is excluded from the validator block proposal process.
 
@@ -1240,15 +1240,15 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"miner_setGasPrice","params":["0x
 
 ### `miner_start`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Start the CPU validation process with the given number of threads.
 
-::: warning
+:{% hint style="info" %}
 Unsupported. This endpoint always returns an error
-:::
+{% endhint %}
 
 #### Parameters
 
@@ -1264,15 +1264,15 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"miner_start","params":["0x1"],"i
 
 ### `miner_stop`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Stop the validation operation.
 
-::: warning
+:{% hint style="info" %}
 Unsupported. This endpoint always performs a no-op.
-:::
+{% endhint %}
 
 ```json
 // Request
@@ -1281,15 +1281,15 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"miner_stop","params":[],"id":1}'
 
 ### `miner_setGasLimit`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Sets the gas limit the miner will target when mining. Note: on networks where [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) is activated, this should be set to twice what you want the gas target (i.e. the effective gas used on average per block) to be.
 
-::: warning
+:{% hint style="info" %}
 Unsupported. This endpoint always returns `false`
-:::
+{% endhint %}
 
 #### Parameters
 
@@ -1317,9 +1317,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"miner_start","params":["0x1"],"i
 
 ### `miner_setEtherbase`
 
-::: tip
+{% hint style="info" %}
 **Private**: Requires authentication.
-:::
+{% endhint %}
 
 Sets the etherbase. It changes the wallet where the validator rewards will be deposited.
 
@@ -1345,29 +1345,29 @@ Returns a list of the exact details of all the transactions currently pending fo
 
 #### Client Examples
 
-:::: tabs
-::: tab Shell HTTP
+{% endhint %}: tabs
+{% endhint %} tab Shell HTTP
 
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"txpool_content","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
-:::
-::: tab Shell WebSocket
+{% endhint %}
+{% endhint %} tab Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "txpool_content", "params": []}'
 ```
 
-:::
-::: tab Javascript Console
+{% endhint %}
+{% endhint %} tab Javascript Console
 
 ```javascript
 txpool.content();
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 #### Result
 
@@ -1383,29 +1383,29 @@ Returns a list on text format to summarize all the transactions currently pendin
 
 #### Client Examples
 
-:::: tabs
-::: tab Shell HTTP
+{% endhint %}: tabs
+{% endhint %} tab Shell HTTP
 
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"txpool_inspect","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
-:::
-::: tab Shell WebSocket
+{% endhint %}
+{% endhint %} tab Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "txpool_inspect", "params": []}'
 ```
 
-:::
-::: tab Javascript Console
+{% endhint %}
+{% endhint %} tab Javascript Console
 
 ```javascript
 txpool.inspect();
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 #### Result
 
@@ -1421,29 +1421,29 @@ Returns the number of transactions currently pending for inclusion in the next b
 
 #### Client Examples
 
-:::: tabs
-::: tab Shell HTTP
+{% endhint %}: tabs
+{% endhint %} tab Shell HTTP
 
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"txpool_status","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
-:::
-::: tab Shell WebSocket
+{% endhint %}
+{% endhint %} tab Shell WebSocket
 
 ```shell
 wscat -c ws://localhost:8546 -x '{"jsonrpc": "2.0", "id": 1, "method": "txpool_status", "params": []}'
 ```
 
-:::
-::: tab Javascript Console
+{% endhint %}
+{% endhint %} tab Javascript Console
 
 ```javascript
 txpool.status();
 ```
 
-:::
-::::
+{% endhint %}
+{% endhint %}:
 
 #### Result
 

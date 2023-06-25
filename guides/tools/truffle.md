@@ -8,8 +8,8 @@ Learn how to deploy a simple Solidity-based smart contract to Uptick using the T
 
 ## Pre-requisite Readings
 
-- [Installation](./../quickstart/installation.md) {prereq}
-- [Run a node](./../quickstart/run_node.md) {prereq}
+- [Installation](./../quickstart/installation.md) 
+- [Run a node](./../quickstart/run_node.md) 
 
 [Truffle](https://www.trufflesuite.com/truffle) is a development framework for deploying and managing [Solidity](https://github.com/ethereum/solidity) smart contracts.
 
@@ -21,9 +21,9 @@ First, install the latest Truffle version on your machine globally.
 yarn install truffle -g
 ```
 
-::: tip
+{% hint style="info" %}
 If you haven't already, you will also need to install Uptick if you plan on deploying your smart contracts locally. Check this [document](./../../quickstart/installation.md) for the full instructions.
-:::
+{% endhint %}
 
 ## Create Truffle Project
 
@@ -114,9 +114,9 @@ Start your local node using the following command on the Terminal
 $ init.sh
 ```
 
-::: tip
+{% hint style="info" %}
 For further information on how to run a node, please refer to the [quickstart guide](./../../quickstart/run_node.md).
-:::
+{% endhint %}
 
 ## Deploy contract
 

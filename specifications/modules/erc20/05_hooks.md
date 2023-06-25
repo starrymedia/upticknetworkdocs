@@ -8,9 +8,9 @@ The erc20 module implements two transaction hooks from the EVM and Governance mo
 
 ## EVM Hooks
 
-::: tip
+{% hint style="info" %}
 👉 **Purpose**: Allow for users to convert ERC20s to Cosmos Coins by sending an Ethereum tx transfer to the module account address. This enables native conversion of tokens via Metamask and EVM-enabled wallets.
-:::
+{% endhint %}
 
 ### Registered Coin: ERC20 to Coin
 
@@ -32,9 +32,9 @@ The erc20 module implements two transaction hooks from the EVM and Governance mo
 
 ## Governance Hooks
 
-::: tip
+{% hint style="info" %}
 👉 **Purpose:** speed up the approval process of a token pair registration by defining a custom `VotingPeriod` duration for the `RegisterCoinProposal` and `RegisterERC20Proposal`.
-:::
+{% endhint %}
 
 ### Overwriting the Voting Period
 

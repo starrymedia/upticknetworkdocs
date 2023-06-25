@@ -8,7 +8,7 @@ Connect your Keplr wallet with Uptick
 
 ## Pre-requisite Readings
 
-- [Install Keplr](https://www.keplr.app/) {prereq}
+- [Install Keplr](https://www.keplr.app/) 
 
 The Keplr browser extension is a wallet for accessing applications in the Cosmos ecosystem and managing user identities. It can be used to connect to Uptick through the official testnet and request Funds from the Faucet.
 
@@ -30,8 +30,8 @@ After approval, you can see a transaction confirmation informing you that {{ $th
 
 ![chain add request](./../img/keplr_transaction.png)
 
-::: tip
+{% hint style="info" %}
 You can request {{ $themeConfig.project.denom }} from the [Faucet](../../testnet/faucet.md) for each address only once every 24h. If you try to request multiple times within the 24h cooldown phase, no transaction will be initiated. Please try again in 24 hours.
-:::
+{% endhint %}
 
 View your account balance either by clicking on the Keplr extension or by [interacting with the node](../../quickstart/interact_node.md). Note that Faucet might not display the amount of {{ $themeConfig.project.testnet_denom }} transferred by the Faucet, as it might be smaller than the number of decimals displayed in the Keplr extension.
