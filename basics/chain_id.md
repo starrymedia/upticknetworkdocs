@@ -13,14 +13,14 @@ Learn about the Uptick chain-id format
 
 | Name                              | Chain ID                                              | Identifier | EIP155 Number                                 | Version Number                                      |
 |-----------------------------------|-------------------------------------------------------|------------|-----------------------------------------------|-----------------------------------------------------|
-| Uptick Origin Testnet                | `origin_{{ $themeConfig.project.testnet_chain_id }}-1` | `uptick`    | `{{ $themeConfig.project.testnet_chain_id }}` | `1`                                                 |
+| Uptick Origin Testnet                | `origin_7000-1` | `uptick`    | `7000` | `1`                                                 |
 
 :::
 ::: tab Mainnet
 
 | Name                                            | Chain ID                                      | Identifier | EIP155 Number                         | Version Number                            |
 |-------------------------------------------------|-----------------------------------------------|------------|---------------------------------------|-------------------------------------------|
-| Uptick | `uptick_{{ $themeConfig.project.chain_id }}-1` | `uptick`    | `{{ $themeConfig.project.chain_id }}` | {{ $themeConfig.project.version_number }} |
+| Uptick | `uptick_117-1` | `uptick`    | `117` | {{ $themeConfig.project.version_number }} |
 :::
 ::::
 

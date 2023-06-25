@@ -30,6 +30,6 @@ The sum of these features allows developers to leverage existing Ethereum ecosys
 
 | Property              | Value                                         |
 | --------------------- | --------------------------------------------- |
-| Uptick Origin Testnet | `{{ $themeConfig.project.testnet_chain_id }}` |
-| Uptick Mainnet        | `{{ $themeConfig.project.chain_id }}`         |
+| Uptick Origin Testnet | `7000` |
+| Uptick Mainnet        | `117`         |
 | Block Time            | \~7 seconds                                   |
