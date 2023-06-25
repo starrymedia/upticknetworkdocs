@@ -1,28 +1,28 @@
-<!--
-order: 1
--->
-
 # Installation
 
-Build and install the Uptick binaries from source or using Docker. 
+Build and install the Uptick binaries from source or using Docker.
 
 ## Pre-requisites
 
-- [Install Go 1.18+](https://golang.org/dl/) {prereq}
-- [Install jq](https://stedolan.github.io/jq/download/) {prereq}
+* [Install Go 1.18+](https://golang.org/dl/) {prereq}
+* [Install jq](https://stedolan.github.io/jq/download/) {prereq}
 
 ## Install Go
 
-::: warning
+{% hint style="info" %}
+**warning**&#x20;
+
 Uptick is built using [Go](https://golang.org/dl/) version `1.18+`
-:::
+{% endhint %}
 
 ```bash
 go version
 ```
 
+
 {% hint style="info" %}
 If the `uptickd: command not found` error message is returned, confirm that your [`GOPATH`](https://golang.org/doc/gopath_code#GOPATH) is correctly configured by running the following command:
+
 
 ```bash
 mkdir -p $HOME/go/bin
@@ -38,9 +38,9 @@ source ~/.bashrc
 
 ## Install Binaries
 
-::: tip
-The latest Uptick [version](https://github.com/UptickNetwork/uptick/releases) is `uptickd v0.2.4`
-:::
+{% hint style="info" %}
+The latest Uptick [version](https://github.com/UptickNetwork/uptick/releases) is `uptickd v0.2.4`&#x20;
+{% endhint %}
 
 ### GitHub
 
