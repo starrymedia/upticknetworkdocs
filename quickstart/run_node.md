@@ -149,6 +149,3 @@ rate(uptickd_transactions_processed[1m])
 
 which will show the rate of transactions processed.
 
-## Next {hide}
-
-Learn about running a Uptick [testnet](./testnet.md) {hide}

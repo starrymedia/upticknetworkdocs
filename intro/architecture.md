@@ -36,7 +36,3 @@ Uptick enables EVM compatibility by implementing various components that togethe
 - Ethereum's `secp256k1` curve for the Cosmos Keyring
 - `StateDB` interface for state updates and queries
 - JSON-RPC client for interacting with the EVM
-
-## Next {hide}
-
-Check the available Uptick [resources](./resources.md) {hide}

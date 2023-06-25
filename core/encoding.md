@@ -64,6 +64,3 @@ func (g txConfig) TxDecoder() sdk.TxDecoder {
 }
 ```
 
-## Next {hide}
-
-Learn how [pending state](./pending_state.md) is handled on Uptick. {hide}

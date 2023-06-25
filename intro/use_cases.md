@@ -47,7 +47,3 @@ and allow for the participation in a more mature blockchain.
 | Maintenance                             | Lower           | Higher           |
 | Sovereignty (validator, config, params) | Lower           | Higher           |
 | Storage requirements                    | Lower           | Higher           |
-
-## Next {hide}
-
-Read the available Uptick [resources](./resources.md) {hide}

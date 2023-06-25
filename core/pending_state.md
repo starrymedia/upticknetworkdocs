@@ -43,7 +43,3 @@ different nodes.
 - [`eth_getTransactionByHash`](./../api/json-rpc/endpoints.md#eth-gettransactionbyhash)
 - [`eth_getTransactionByBlockNumberAndIndex`](./../api/json-rpc/endpoints.html#eth-gettransactionbyblockhashandindex)
 - [`eth_sendTransaction`](./../api/json-rpc/endpoints.md#eth-sendtransaction)
-
-## Next {hide}
-
-Learn how to deploy a Solidity smart contract on Uptick using [Truffle](./../guides/truffle.md) {hide}
