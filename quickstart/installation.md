@@ -9,7 +9,11 @@ Build and install the Uptick binaries from source or using Docker.
 
 ## Install Go
 
-::: warning Uptick is built using [Go](https://golang.org/dl/) version `1.18+` :::
+{% hint style="info" %}
+**warning**&#x20;
+
+Uptick is built using [Go](https://golang.org/dl/) version `1.18+`
+{% endhint %}
 
 ```bash
 go version
